@@ -1,0 +1,27 @@
+.navbar{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #111;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.navbar ul{
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    font-size: 8vw;
+    transform: translate(-50%,-50%);
+}
+
+@media (max-width: 900px) {
+    .navbar ul li{
+      margin-bottom: 2vh;
+      font-size: 4rem;
+    }
+}

@@ -1,0 +1,108 @@
+.main {
+  color: hsl(0 0 60%);
+  padding: 0 80px;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.projects {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 2fr 3fr;
+}
+
+.bgTitle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: inline-block;
+  font-size: 10vw;
+  transform: translate(0, -50%);
+}
+
+.bgTitle h1 {
+  color: hsl(0, 0%, 10%);
+  margin: 0;
+  padding: 0;
+  font-size: 1.3em;
+  line-height: 1;
+  user-select: none;
+}
+
+.projectDescriptions {
+  position: relative;
+}
+
+.projectDescriptions h1 {
+  font-size: clamp(2rem, -0.5000rem + 9.8889vw, 4rem);
+}
+
+.projectDescriptions p {
+  font-size: 1.5rem;
+  padding: 16px 0;
+}
+
+
+.projectDescriptions button {
+  padding: 3% 0;
+  background: none;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: clamp(1rem, -0.5000rem + 3.8889vw, 1.2rem);
+}
+
+
+.img {
+  margin-top: 5vh;
+  width: 45vw;
+  z-index: 2;
+  opacity: .5;
+}
+
+.img img {
+  width: inherit;
+}
+
+.content {
+  padding: 20px 0;
+  max-width: 90%;
+
+  font-size: clamp(1.2rem, 0.4000rem + 3.5556vw, 1.5rem);
+}
+
+.content h1 {
+  margin-bottom: .8rem;
+  font-size: clamp(1.5rem, -0.5000rem + 8.8889vw, 3.5rem);
+}
+
+
+
+@media only screen and (max-width: 780px) {
+  .main {
+    padding: 80px 40px;
+  }
+
+  .projects {
+    height: max-content;
+    display: block;
+  }
+
+
+  .bgTitle {
+    display: none;
+  }
+
+  .projectDescriptions p {
+    display: none;
+  }
+
+ 
+  .img {
+    width: 80vw;
+    opacity: .9;
+    padding-bottom: 2vh;
+  }
+
+}

@@ -1,0 +1,99 @@
+.container {
+    color:hsl(0, 0%, 60%);
+    padding: 140px 40px;
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;  
+}
+
+.image {
+    border-radius: 50%;
+}
+
+
+.header {
+    font-size: clamp(2rem, -0.5000rem + 8.8889vw, 4.5rem);
+    text-align: center;
+}
+
+.title {
+    font-size: clamp(1.4rem, 0.4000rem + 3.5556vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+}
+
+.aboutme {
+    padding: 2rem 0;
+    font-size: clamp(1.2rem, 0.4000rem + 3.5556vw, 2rem);
+}
+
+.paragraph {
+    padding: 1rem 0;
+}
+
+.flex {
+    display: flex;
+    margin: 1rem 0 0 0;
+    font-size: clamp(1rem, -0.5000rem + 8.8889vw, 1.8rem);
+}
+
+.btn {
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 8px 16px;
+    /* background: hsl(0 1.49% 10%); */
+    margin-right: 2vw;
+}
+
+.btn:hover{
+    background:hsl(0 1.49% 20%);
+}
+
+@media only screen and (min-width: 1540px) {
+    .container{
+        height:100%;
+        transform:translate(0,40%);
+        padding:0;
+        max-width:80%;
+    }
+   .header,.title,.aboutme,.flex{
+    font-size:2vw;
+   }
+}
+
+@media only screen and (max-width: 540px) {
+    .container {
+        padding: 60px 30px;
+        height: fit-content;
+    }
+    .flex {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .img{
+        height:200px;
+        width:150px;
+        margin-inline:auto;
+    }
+
+    .container {
+        padding: 60px 25px;
+    }
+
+    .btn {
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 8px 16px;
+        background: rgb(34, 33, 33);
+        margin-right: 2vw;
+        font-size:16px;
+    }
+}

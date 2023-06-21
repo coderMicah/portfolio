@@ -1,0 +1,96 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    margin: 15vh 10vw;
+    position: absolute;
+    gap:2vw;
+}
+
+.letsTalk {
+    color: hsl(0, 0%, 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle {
+    font-size: clamp(2rem, -0.5000rem + 9.8889vw, 3rem);
+}
+
+.intro {
+    font-size: clamp(1rem, 4.8889vw, 2rem);
+    padding: 3vh 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex li {
+    font-size: clamp(2rem, -0.5000rem + 9.8889vw, 4rem);
+    padding-right: 2vw;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 0 auto; */
+}
+
+
+
+.form input,
+.form textarea {
+    background-color: inherit;
+    margin: 3vh 0;
+    padding: 16px 2px 4px 2px;
+    border: none;
+    border-bottom: 1px solid rgb(59, 59, 59);
+}
+
+.form ::placeholder {
+    font-size: clamp(1rem, 4.8889vw, 1.5rem);
+}
+
+.form button {
+    padding: 12px;
+    margin: 3vh 0;
+    border:none;
+    background: hsl(0, 1.5%, 50%);
+    font-size: clamp(1rem, 4.8889vw, 2rem);
+}
+
+.form button:hover{
+    background: hsl(0, 1.5%, 20%);
+}
+
+@media only screen and (min-width: 1540px)  {
+    .grid,.subtitle, .intro, .flex li {
+       font-size:3vw;
+    }
+
+    .form input, .form textarea, .form ::placeholder{
+        font-size:2vw;
+    }
+}
+@media (max-width: 1000px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .letsTalk {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .flex {
+        position: relative;
+        padding: 2vh 0;
+    }
+}
